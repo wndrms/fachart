@@ -4,6 +4,8 @@ import Main from "./Main";
 import Manage from "./Manage";
 import List from "./List";
 import Analytics from "./Analytics";
+import Pricedata from "./Pricedata";
+import Chart from "./Chart";
 
 const AppRouter = () => {
     return(
@@ -20,6 +22,12 @@ const AppRouter = () => {
                 </Route>
                 <Route exact path="/Analytics">
                     <Analytics></Analytics>
+                </Route>
+                <Route exact path="/Pricedata">
+                    <Pricedata></Pricedata>
+                </Route>
+                <Route exact path="/Chart">
+                    <Chart></Chart>
                 </Route>
             </Switch>
         </Router>
